@@ -41,7 +41,7 @@ if selected_option == "アンジェリーナ":
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
-            param2 = 10
+            param2 = 1000
             if buturi(param1,param2) < param1 * 0.05:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
@@ -118,7 +118,7 @@ elif selected_option == "エクシア":
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
-            param2 = 10
+            param2 = 1000
             if buturi(param1,param2) < param1 * 0.05:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
@@ -154,7 +154,7 @@ elif selected_option == "エクシア":
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
-            param2 = 10
+            param2 = 1000
             if buturi(param1,param2) < param1 * 0.05:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
@@ -188,7 +188,7 @@ elif selected_option == "エクシア":
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
-            param2 = 10
+            param2 = 1000
             if buturi(param1,param2) < param1 * 0.05:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
