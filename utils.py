@@ -129,7 +129,7 @@ elif selected_option == "エクシア":
             else st.write(buturi(param1,param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
-            if buturi(param1,param2) < param1 * 0.05:
+            if buturi(param1,param2) < 1:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
     elif selected_option == "バーストモード":
