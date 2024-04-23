@@ -4,7 +4,7 @@ def buturi(param1, param2):
     result = param1 - param2
     return result
 def zyutu(param3, param4):
-    result = param3 * (100 - param4) / 100
+    result = param3 * (1 - param4) / 1
     return result
 # ページのタイトルを設定
 st.title("アークナイツダメージシミュレータ")
@@ -23,7 +23,7 @@ if selected_option == "アンジェリーナ":
         st.write("攻撃力+110%")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
-        param1 = st.number_input("攻撃力を入力してください", value=100)
+        param1 = st.number_input("攻撃力を入力してください", value=1)
         param1 = param1 * (1 + 1.1)
         if selected_option == "オリジムシ":
             param2 = 0
@@ -41,7 +41,7 @@ if selected_option == "アンジェリーナ":
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
-            param2 = 1000
+            param2 = 10
             if buturi(param1,param2) < param1 * 0.05:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
@@ -100,7 +100,7 @@ elif selected_option == "エクシア":
         st.write("次の通常攻撃時、3回連続で攻撃力の145%の物理ダメージを与える")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
-        param1 = st.number_input("攻撃力を入力してください", value=100)
+        param1 = st.number_input("攻撃力を入力してください", value=1)
         param1 = param1 * (1 + 1.45)
         if selected_option == "オリジムシ":
             param2 = 0
@@ -118,7 +118,7 @@ elif selected_option == "エクシア":
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
-            param2 = 1000
+            param2 = 10
             if buturi(param1,param2) < param1 * 0.05:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
@@ -136,7 +136,7 @@ elif selected_option == "エクシア":
         st.write("通常攻撃が攻撃力の125%での4回連続攻撃になる")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
-        param1 = st.number_input("攻撃力を入力してください", value=100)
+        param1 = st.number_input("攻撃力を入力してください", value=1)
         param1 = param1 * (1 + 1.25)
         if selected_option == "オリジムシ":
             param2 = 0
@@ -154,7 +154,7 @@ elif selected_option == "エクシア":
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
-            param2 = 1000
+            param2 = 10
             if buturi(param1,param2) < param1 * 0.05:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
@@ -170,7 +170,7 @@ elif selected_option == "エクシア":
         st.write("通常攻撃が5回連続攻撃になり、攻撃間隔を短縮し、攻撃力が110%まで上昇")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
-        param1 = st.number_input("攻撃力を入力してください", value=100)
+        param1 = st.number_input("攻撃力を入力してください", value=1)
         param1 = param1 * (1 + 1.1)
         if selected_option == "オリジムシ":
             param2 = 0
@@ -188,7 +188,7 @@ elif selected_option == "エクシア":
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
-            param2 = 1000
+            param2 = 10
             if buturi(param1,param2) < param1 * 0.05:
                 st.write(param1 * 0.05)
             else st.write(buturi(param1,param2))
@@ -208,7 +208,7 @@ elif selected_option == "シルバーアッシュ":
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
     elif selected_option == "雪境生存戦略":
-        st.write("発動する度初期状態と次の状態とが切り替わる：攻撃範囲縮小、防御力+100%、1秒ごとにHPが最大値の6.0%回復")
+        st.write("発動する度初期状態と次の状態とが切り替わる：攻撃範囲縮小、防御力+1%、1秒ごとにHPが最大値の6.0%回復")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
     elif selected_option == "真銀斬":
@@ -236,7 +236,7 @@ elif selected_option == "ホシグマ":
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
     elif selected_option == "荊棘":
-        st.write("防御力+30%、攻撃される度自身の攻撃力の100%の物理ダメージで敵に反撃する")
+        st.write("防御力+30%、攻撃される度自身の攻撃力の1%の物理ダメージで敵に反撃する")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
     elif selected_option == "般若":
