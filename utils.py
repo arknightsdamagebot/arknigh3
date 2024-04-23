@@ -27,22 +27,34 @@ if selected_option == "アンジェリーナ":
         param1 = param1 * (1 + 1.1)
         if selected_option == "オリジムシ":
             param2 = 0
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "機動盾隊長":
             param2 = 300
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "軽装隊長":
             param2 = 500
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
             param2 = 1000
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "遊撃隊盾兵隊長":
             param2 = 1500
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
     elif selected_option == "秘杖・微粒子":
         st.write("通常攻撃の間隔を超大幅に短縮し、45%の攻撃力で術攻撃を行う")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
@@ -92,22 +104,34 @@ elif selected_option == "エクシア":
         param1 = param1 * (1 + 1.45)
         if selected_option == "オリジムシ":
             param2 = 0
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "機動盾隊長":
             param2 = 300
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "軽装隊長":
             param2 = 500
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
             param2 = 1000
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "遊撃隊盾兵隊長":
             param2 = 1500
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
     elif selected_option == "バーストモード":
         st.write("通常攻撃が攻撃力の125%での4回連続攻撃になる")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
@@ -116,19 +140,29 @@ elif selected_option == "エクシア":
         param1 = param1 * (1 + 1.25)
         if selected_option == "オリジムシ":
             param2 = 0
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "機動盾隊長":
             param2 = 300
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "軽装隊長":
             param2 = 500
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
             param2 = 1000
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "遊撃隊盾兵隊長":
             param2 = 1500
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
             st.write(buturi(param1, param2) * 4)
@@ -140,19 +174,29 @@ elif selected_option == "エクシア":
         param1 = param1 * (1 + 1.1)
         if selected_option == "オリジムシ":
             param2 = 0
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "機動盾隊長":
             param2 = 300
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "軽装隊長":
             param2 = 500
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "重装隊長":
             param2 = 1000
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "遊撃隊盾兵隊長":
             param2 = 1500
-            st.write(buturi(param1, param2) * 3)
+            if buturi(param1,param2) =< param1 * 0.05:
+                st.write(param1 * 0.05)
+            else st.write(buturi(param1,param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
             st.write(buturi(param1, param2) * 5)
