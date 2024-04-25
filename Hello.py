@@ -116,19 +116,19 @@ elif selected_option == "エクシア":
         param1 = param1 * (1 + 1.25)
         if selected_option == "オリジムシ":
             param2 = 0
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 4)
         elif selected_option == "機動盾隊長":
             param2 = 300
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 4)
         elif selected_option == "軽装隊長":
             param2 = 500
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 4)
         elif selected_option == "重装隊長":
             param2 = 1000
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 4)
         elif selected_option == "遊撃隊盾兵隊長":
             param2 = 1500
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 4)
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
             st.write(buturi(param1, param2) * 4)
@@ -140,19 +140,19 @@ elif selected_option == "エクシア":
         param1 = param1 * (1 + 1.1)
         if selected_option == "オリジムシ":
             param2 = 0
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 5)
         elif selected_option == "機動盾隊長":
             param2 = 300
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 5)
         elif selected_option == "軽装隊長":
             param2 = 500
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 5)
         elif selected_option == "重装隊長":
             param2 = 1000
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 5)
         elif selected_option == "遊撃隊盾兵隊長":
             param2 = 1500
-            st.write(buturi(param1, param2) * 3)
+            st.write(buturi(param1, param2) * 5)
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
             st.write(buturi(param1, param2) * 5)
