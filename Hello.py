@@ -18,7 +18,7 @@ def generate_text_with_context(initial_sequence, transition_probs, num_chars=9):
     return generated_text
 
 def main():
-    st.title('Character Generation with Contextual Probabilities')
+    st.title('マルコフ規則でこしたんたん')
     
     st.markdown('## Transition Probabilities')
     
@@ -31,14 +31,11 @@ def main():
         'ん': {'た': 1.0}
     }
     
-    st.json(transition_probs)  # 遷移確率を表示
+    st.markdown('生成された文章')
     
-    st.markdown('## Generated Text')
+    initial_sequence = 'し'
     
-    initial_sequence = st.text_input('Initial sequence', value='し')
-    num_chars = st.number_input('Number of new characters to generate', min_value=1, value=20)
-    
-    if st.button('Generate'):
+    if st.button('生成する'):
         generated_text = generate_text_with_context(initial_sequence, transition_probs, num_chars)
         st.write(f"Initial sequence: {initial_sequence}")
         st.write(f"Generated text: {generated_text}")
