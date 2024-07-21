@@ -26,7 +26,7 @@ def main():
         'し': {'か': 0.5, 'た': 0.5},
         'か': {'の': 1.0},
         'の': {'こ': 1.0},
-        'こ': {'の': 0.67, 'こ': 0.33},
+        'こ': {'の': 0.50, 'こ': 0.25, 'し': 0.25},
         'た': {'ん': 1.0},
         'ん': {'た': 1.0}
     }
@@ -35,7 +35,7 @@ def main():
     
     st.markdown('## Generated Text')
     
-    initial_sequence = st.text_input('Initial sequence', value='しかのこのこのここしたんたん')
+    initial_sequence = st.text_input('Initial sequence', value='し')
     num_chars = st.number_input('Number of new characters to generate', min_value=1, value=20)
     
     if st.button('Generate'):
