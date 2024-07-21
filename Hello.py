@@ -20,7 +20,6 @@ def generate_text_with_context(initial_sequence, transition_probs, num_chars=9):
 def main():
     st.title('マルコフ規則でこしたんたん')
     
-    st.markdown('## Transition Probabilities')
     
     transition_probs = {
         'し': {'か': 0.5, 'た': 0.5},
