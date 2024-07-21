@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 
 # マルコフモデルを使用して次の文字の確率を直前の文字に依存させる
-def generate_text_with_context(initial_sequence, transition_probs, num_chars=9):
+def generate_text_with_context(initial_sequence, transition_probs, num_chars=8):
     generated_text = initial_sequence
     current_sequence = initial_sequence[-1]  # 最初の1文字を初期の直前の文字列とする
     
