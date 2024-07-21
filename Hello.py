@@ -31,11 +31,11 @@ def main():
         'ん': {'た': 1.0}
     }
     
-    st.markdown('生成された文章')
     
     initial_sequence = 'し'
+    num_chars = st.number_input('Number of new characters to generate', min_value=1, value=20)
     
-    if st.button('生成する'):
+    if st.button('Generate'):
         generated_text = generate_text_with_context(initial_sequence, transition_probs, num_chars)
         st.write(f"Initial sequence: {initial_sequence}")
         st.write(f"Generated text: {generated_text}")
