@@ -38,7 +38,6 @@ def main():
         generated_text = generate_text_with_context(initial_sequence, transition_probs, num_chars)
         st.write(f"Initial sequence: {initial_sequence}")
         st.write(f"Generated text: {generated_text}")
-        st.write(f"New characters generated: {generated_text[len(initial_sequence):]}")
 
 if __name__ == '__main__':
     main()
