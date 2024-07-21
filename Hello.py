@@ -14,7 +14,10 @@ def generate_text_with_context(initial_sequence, transition_probs, num_chars=9):
             generated_text += next_char
             current_sequence = current_sequence[1:] + next_char
         else:
-            break  # モデルが指定された context に対応する文字列を見つけられなかった場合、ループを終了する
+            # モデルが指定された context に対応する文字列を見つけられなかった場合、ランダムに次の文字を選ぶ
+            next_char = np.random.choice(['し', 'か', 'の', 'こ', 'た', 'ん'])
+            generated_text += next_char
+            current_sequence = current_sequence[1:] + next_char
     
     return generated_text
 
