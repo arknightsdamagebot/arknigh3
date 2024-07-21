@@ -7,11 +7,14 @@ def generate_text_with_context(initial_sequence, transition_probs, num_chars=9):
     current_sequence = initial_sequence[-3:]  # 最初の3文字を初期の直前の文字列とする
     
     for _ in range(num_chars - len(initial_sequence)):
-        # Choose the next character based on transition probabilities
-        next_char = np.random.choice(list(transition_probs[current_sequence].keys()), 
-                                     p=list(transition_probs[current_sequence].values()))
-        generated_text += next_char
-        current_sequence = current_sequence[1:] + next_char
+        if current_sequence in transition_probs:
+            # Choose the next character based on transition probabilities
+            next_char = np.random.choice(list(transition_probs[current_sequence].keys()), 
+                                         p=list(transition_probs[current_sequence].values()))
+            generated_text += next_char
+            current_sequence = current_sequence[1:] + next_char
+        else:
+            break  # モデルが指定された context に対応する文字列を見つけられなかった場合、ループを終了する
     
     return generated_text
 
