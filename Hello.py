@@ -36,7 +36,6 @@ def main():
     
     if st.button('Generate'):
         generated_text = generate_text_with_context(initial_sequence, transition_probs, num_chars)
-        st.write(f"Initial sequence: {initial_sequence}")
         st.write(f"Generated text: {generated_text}")
 
 if __name__ == '__main__':
