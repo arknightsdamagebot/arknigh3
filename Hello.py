@@ -41,10 +41,11 @@ def main():
     ## Generated Text
     ''')
     
-    # Generate and display the generated text
-    initial_sequence = 'しかのこのこのここしたんたん'
-    generated_text = generate_text_with_context(initial_sequence, transition_probs)
-    st.write(generated_text)
+    # ボタンを押すと生成される
+    if st.button('Generate'):
+        initial_sequence = 'しかのこのこのここしたんたん'
+        generated_text = generate_text_with_context(initial_sequence, transition_probs)
+        st.write(generated_text)
 
 if __name__ == '__main__':
     main()
